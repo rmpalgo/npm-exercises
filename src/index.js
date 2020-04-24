@@ -1,6 +1,7 @@
 "use strict";
 
-const $ = require('jquery');
+import $ from 'jquery';
+import message from './say-hello'
 
 $(document).ready( () => {
     console.log('dom is ready');
@@ -12,11 +13,12 @@ $(document).ready( () => {
 
    $('#submit').click( (e) => {
        e.preventDefault();
-       let $textValue = $('#text-value').val()
+       let $textValue = $('#text-value').val();
        console.log($textValue);
        $('#render-text').append(`<li>${renderHello()} ${$textValue}!</li>`);
    });
     console.log('hello from node!');
+    console.log(message.niceMessage('ron'));
 });
 
 
