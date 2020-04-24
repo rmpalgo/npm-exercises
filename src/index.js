@@ -2,6 +2,9 @@
 
 import $ from 'jquery';
 import message from './say-hello'
+import math from './math.js';
+const allKeys = require('./list');
+
 
 $(document).ready( () => {
     console.log('dom is ready');
@@ -19,6 +22,10 @@ $(document).ready( () => {
    });
     console.log('hello from node!');
     console.log(message.niceMessage('ron'));
+    console.log(math.add(2, 3));
+    console.log(math.divide(2, 2));
+    console.log(math.multiply(2, 2));
+    console.log(allKeys.keys.key1);
 });
 
 
