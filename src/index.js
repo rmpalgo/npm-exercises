@@ -16,7 +16,7 @@ $(document).ready( () => {
        console.log($textValue);
        $('#render-text').append(`<li>${renderHello()} ${$textValue}!</li>`);
    });
-    console.log('from node fropm node akdjfak;ldjfa;jdf;a');
+    console.log('hello from node!');
 });
 
 
