@@ -9,12 +9,13 @@ $(document).ready( () => {
 
     const renderHello = (input) => { return `${sayHello()} there! My name is terminal from node. It's nice to meet you ${input}` };
 
-    let $textValue = $('#text-value');
+    ;
 
    $('#submit').click( (e) => {
        e.preventDefault();
-
-       console.log($textValue.val());
+       let $textValue = $('#text-value').val()
+       console.log($textValue);
+       $('#render-text').append(`<li>${$textValue}</li>`);
    });
 
 });
