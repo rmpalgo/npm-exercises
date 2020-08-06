@@ -2,6 +2,9 @@
 
 import $ from 'jquery';
 import message from './say-hello'
+
+const API = require('./api');
+
 import math from './math.js';
 const allKeys = require('./list');
 
@@ -26,6 +29,9 @@ $(document).ready( () => {
     console.log(math.divide(2, 2));
     console.log(math.multiply(2, 2));
     console.log(allKeys.keys.key1);
+
+    console.log(API.url);
+
 });
 
 
