@@ -22,3 +22,21 @@ function countNucleotides(data) {
 }
 
 console.log(countNucleotides(data));
+
+//Transcribing DNA into RNA
+let set = 'GATGGAACTTGACTACGTAAATT';
+let dna = set.split("");
+console.log(dna);
+
+function dnaToRna(dna) {
+    console.log(dna);
+    for(let d = 0; d < dna.length ; d++) {
+        console.log(dna[d]);
+        if(dna[d] === 'T') {
+            dna[d] = 'U';
+        }
+    }
+    return dna;
+}
+let rna = dnaToRna(dna).join('');
+console.log(rna);
